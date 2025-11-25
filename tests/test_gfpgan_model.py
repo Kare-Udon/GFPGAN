@@ -1,6 +1,9 @@
 import tempfile
 import torch
 import yaml
+from gfpgan.torchvision_compat import ensure_legacy_torchvision_support
+
+ensure_legacy_torchvision_support()
 from basicsr.archs.stylegan2_arch import StyleGAN2Discriminator
 from basicsr.data.paired_image_dataset import PairedImageDataset
 from basicsr.losses.losses import GANLoss, L1Loss, PerceptualLoss

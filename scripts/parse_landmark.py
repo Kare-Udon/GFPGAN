@@ -3,6 +3,9 @@ import json
 import numpy as np
 import os
 import torch
+from gfpgan.torchvision_compat import ensure_legacy_torchvision_support
+
+ensure_legacy_torchvision_support()
 from basicsr.utils import FileClient, imfrombytes
 from collections import OrderedDict
 

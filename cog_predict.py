@@ -13,6 +13,9 @@ import cv2
 import shutil
 import tempfile
 import torch
+from gfpgan.torchvision_compat import ensure_legacy_torchvision_support
+
+ensure_legacy_torchvision_support()
 from basicsr.archs.srvgg_arch import SRVGGNetCompact
 
 from gfpgan import GFPGANer

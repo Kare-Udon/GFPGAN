@@ -104,6 +104,11 @@ If you want to use the original model in our paper, please see [PaperModel.md](P
     pip install realesrgan
     ```
 
+### 兼容性提示
+
+- 针对新版`torchvision`移除`torchvision.transforms.functional_tensor`的调整，仓库内已添加自动兼容补丁，直接运行脚本即可。
+- 如需验证兼容行为，可执行：`PYTHONPATH=. pytest tests/test_torchvision_compat.py -o addopts=`
+
 ## :zap: Quick Inference
 
 We take the v1.3 version for an example. More models can be found [here](#european_castle-model-zoo).

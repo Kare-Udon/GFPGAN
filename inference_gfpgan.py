@@ -1,9 +1,12 @@
 import argparse
-import cv2
 import glob
 import numpy as np
 import os
 import torch
+from gfpgan.torchvision_compat import ensure_legacy_torchvision_support
+
+ensure_legacy_torchvision_support()
+import cv2
 from basicsr.utils import imwrite
 
 from gfpgan import GFPGANer
