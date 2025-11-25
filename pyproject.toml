@@ -49,3 +49,6 @@ dependencies = [
   "tqdm>=4.67.1",
   "yapf>=0.43.0",
 ]
+
+[tool.setuptools.packages.find]
+include = ["gfpgan*"]
