@@ -1,3 +1,51 @@
 [build-system]
 requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "gfpgan"
+version = "0.1.0"
+requires-python = ">=3.8"
+
+description = "GFPGAN aims at developing Practical Algorithms for Real-world Face Restoration"
+readme = "README.md"
+
+license = { text = "Apache License Version 2.0" }
+
+authors = [
+  { name = "Xintao Wang", email = "xintao.wang@outlook.com" },
+]
+
+keywords = [
+  "computer vision",
+  "pytorch",
+  "image restoration",
+  "super-resolution",
+  "face restoration",
+  "gan",
+  "gfpgan",
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+]
+
+dependencies = [
+  "basicsr>=1.4.2",
+  "facexlib>=0.2.5",
+  "lmdb>=1.7.5",
+  "numpy>=1.26.4",
+  "opencv-python>=4.11.0.86",
+  "pyyaml>=6.0.3",
+  "scipy>=1.16.3",
+  "tb-nightly>=2.21.0a20251023",
+  "torch>=1.7",
+  "torchvision>=0.24.1",
+  "tqdm>=4.67.1",
+  "yapf>=0.43.0",
+]
